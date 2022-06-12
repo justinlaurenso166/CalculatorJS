@@ -113,3 +113,15 @@ const deleteNumber = () => {
 backspace.addEventListener("click", () => {
     deleteNumber()
 })
+
+//percentage
+const percentage = document.querySelector(".percentage");
+
+const calculatePercentage = () => {
+    currentNumber = (currentNumber / 100)
+}
+
+percentage.addEventListener("click", () => {
+    calculatePercentage();
+    updateScreen(currentNumber)
+})
